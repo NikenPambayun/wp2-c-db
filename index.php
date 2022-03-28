@@ -27,14 +27,12 @@ $result = pg_query($sql);
             <td><?= $row->nama ?></td>
             <td><?= $row->kelas ?></td>
             <td>
-<?php
-echo '<a href="hapus.php?nim=' . $row->nim . '">Hapus</a>'
-?>
+<?php echo '<a href="hapus.php?nim=' . $row->nim . '">Hapus</a>' ?>
+            </td>
+            <td>
+<?php echo '<a href="ubah.php?nim=' . $row->nim . '">Ubah</a>' ?>
             </td>
         </tr>
-
-<?php
-  endwhile;
-?>
+<?php endwhile; ?>
     </tbody>
 </table>
